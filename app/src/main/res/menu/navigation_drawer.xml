@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/diary_notes"
+            android:icon="@drawable/one_icon"
+            android:title="Diary Notes" />
+        <item
+            android:id="@+id/daily_expenses"
+            android:icon="@drawable/two_icon"
+            android:title="Daily Expenses" />
+        <item
+            android:id="@+id/event_calendar"
+            android:icon="@drawable/three_icon"
+            android:title="Event Calendar" />
+        <item
+            android:id="@+id/travel_planner"
+            android:icon="@drawable/four_icon"
+            android:title="Travel Planner" />
+        <item
+            android:id="@+id/saved_photos"
+            android:icon="@drawable/five_icon"
+            android:title="Saved Notes" />
+        <item
+            android:id="@+id/theme_wallpaper"
+            android:icon="@drawable/six_icon"
+            android:title="Theme Wallpaper" />
+
+
+
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/pro"
+            android:icon="@drawable/seven_icon"
+            android:title="Pro" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/eight_icon"
+            android:title="Settings" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#0095FF</color>
+    <color name="purple_500">#0095FF</color>
+    <color name="purple_700">#0095FF</color>
+    <color name="teal_200">#0095FF</color>
+    <color name="teal_700">#0095FF</color>
+    <color name="black">#FF000000</color>
+    <color name="gray">#B8B8B8</color>
+    <color name="light_gray">#F2F4F6</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_color">#0095FF</color>
+    <color name="purple">#38139E</color>
+    <color name="primaryTextColor">#260095FF</color>
+    <color name="yellow">#FAE013</color>
+    <color name="colorIcon">#FFFFFF</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorPrimary">#0095FF</color>
+    <color name="colorPrimaryDark">#0095FF</color>
+    <color name="colorPrimaryLight">#330095FF</color>
+    <color name="colorAccent">#00bcd4</color>
+    <color name="orange">#F0924C</color>
+    <color name="dark_blue">#367CFF</color>
+    <color name="text_color_new">#526581</color>
+    <color name="checked">#007AFF</color>
+    <color name="purple1_500">#ED1111</color>
+    <color name="purple1_700">#ED1111</color>
+
+    <color name="text_color_primary">#222222</color>
+    <color name="text_color_primary2">#A38585</color>
+
+    <color name="primaryColor_default">#0095FF</color>
+    <color name="primaryColorDark_default">#0095FF</color>
+    <color name="primaryAccent_default">#0095FF</color>
+
+    <color name="primaryColor_orange">#D84315</color>
+    <color name="primaryColorDark_orange">#BF360C</color>
+    <color name="primaryAccent_orange">#FF5722</color>
+
+    <color name="primaryColor_brown">#4E342E</color>
+    <color name="primaryColorDark_brown">#3E2723</color>
+    <color name="primaryAccent_brown">#795548</color>
+
+    <color name="primaryColor_yellow">#FBC02D</color>
+    <color name="primaryColorDark_yellow">#F9A825</color>
+    <color name="primaryAccent_yellow">#FFEB3B</color>
+
+    <color name="primaryColor_green">#2E7D32</color>
+    <color name="primaryColorDark_green">#1B5E20</color>
+    <color name="primaryAccent_green">#4CAF50</color>
+
+    <color name="primaryColor_blue">#1565C0</color>
+    <color name="primaryColorDark_blue">#0D47A1</color>
+    <color name="primaryAccent_blue">#2196F3</color>
+
+    <color name="primaryColor_purple">#6A1B9A</color>
+    <color name="primaryColorDark_purple">#4A148C</color>
+    <color name="primaryAccent_purple">#8E24AA</color>
+</resources>

@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".NextExpenseActivity">
+
+    <Toolbar
+        android:id="@+id/toobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:padding="9dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/back"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@+id/back"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text="Daily Expense"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toobar"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toobar"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            app:cardCornerRadius="10dp">
+
+            <Spinner
+                android:id="@+id/expense_typeSP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+        </androidx.cardview.widget.CardView>
+
+
+        <EditText
+            android:id="@+id/expense_amountET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btnbg"
+            android:gravity="center_horizontal"
+            android:hint="@string/enter_expense_amount"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/expense_dateET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btnbg"
+            android:drawableEnd="@drawable/date"
+            android:drawableRight="@drawable/date"
+            android:drawableTint="@color/purple_200"
+            android:gravity="center"
+            android:hint="@string/enter_expense_date"
+            android:padding="8dp"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/expense_timeET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btnbg"
+            android:drawableEnd="@drawable/time"
+            android:drawableRight="@drawable/time"
+            android:drawableTint="@color/purple_200"
+            android:gravity="center"
+            android:hint="@string/enter_expense_time_optional"
+            android:padding="8dp"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight=".3">
+
+                <ImageView
+                    android:id="@+id/expense_imageIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/document"
+                    android:src="@drawable/file"
+
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/cancelimageIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="@string/document"
+                    android:src="@drawable/ic_cancel_black_24dp"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/expense_docBTN"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight=".7"
+                android:background="@drawable/btnbg"
+                android:gravity="center"
+                android:hint="@string/add_document_if_any"
+                android:textAllCaps="false"
+                android:textColorHint="#000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/add_expenseBTN"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btnbg"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/add_expense"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_below="@+id/toobar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--        <TableLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="5dp"-->
+    <!--            android:background="@android:color/white">-->
+
+    <!--            &lt;!&ndash; Table Heading &ndash;&gt;-->
+
+    <!--            <TableRow android:background="@color/yellow">-->
+
+    <!--                &lt;!&ndash;                <TextView&ndash;&gt;-->
+    <!--                &lt;!&ndash;                    android:layout_width="0dp"&ndash;&gt;-->
+    <!--                &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--                &lt;!&ndash;                    android:layout_weight="2"&ndash;&gt;-->
+    <!--                &lt;!&ndash;                    android:gravity="center_horizontal"&ndash;&gt;-->
+    <!--                &lt;!&ndash;                    android:padding="10sp"&ndash;&gt;-->
+    <!--                &lt;!&ndash;                    android:text="No."&ndash;&gt;-->
+    <!--                &lt;!&ndash;                    android:textColor="@android:color/black"&ndash;&gt;-->
+    <!--                &lt;!&ndash;                    android:textSize="14sp"&ndash;&gt;-->
+    <!--                &lt;!&ndash;                    android:textStyle="bold" />&ndash;&gt;-->
+
+
+    <!--                <Spinner-->
+    <!--                    android:id="@+id/expense_typeSP"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_weight="5"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:textAlignment="center" />-->
+
+    <!--                <Button-->
+    <!--                    android:id="@+id/date"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:hint="Date"-->
+    <!--                    android:textColor="#000"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:padding="8dp"-->
+    <!--                    android:textSize="16sp"-->
+    <!--                    android:background="@android:color/transparent"-->
+    <!--                    android:textColorHint="#000" />-->
+
+    <!--                <EditText-->
+    <!--                    android:id="@+id/expense_amountET"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:background="@android:color/transparent"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text="Cost"-->
+    <!--                    android:textColor="@android:color/black"-->
+    <!--                    android:textSize="14sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <Button-->
+    <!--                    android:id="@+id/expense_timeET"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:background="@android:color/transparent"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:textAllCaps="false"-->
+    <!--                    android:text="Time"-->
+    <!--                    android:textColor="@android:color/black"-->
+    <!--                    android:textSize="14sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/expense_docBTN"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_weight="5"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text="Document"-->
+    <!--                    android:textColor="@android:color/black"-->
+    <!--                    android:textSize="14sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+
+    <!--            </TableRow>-->
+
+    <!--            &lt;!&ndash; Table Data &ndash;&gt;-->
+
+    <!--            <TableRow>-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="5"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:layout_marginBottom="20sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <Button-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:background="@android:color/transparent"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp" />-->
+
+
+    <!--            </TableRow>-->
+
+    <!--            <TableRow>-->
+
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_marginBottom="20sp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="5"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+    <!--                <Button-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:background="@android:color/transparent"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp" />-->
+    <!--            </TableRow>-->
+
+    <!--            <TableRow>-->
+
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="5"-->
+    <!--                    android:layout_marginBottom="20sp"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <Button-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:background="@android:color/transparent"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp" />-->
+    <!--            </TableRow>-->
+
+    <!--            <TableRow>-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="5"-->
+    <!--                    android:layout_marginBottom="20sp"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:layout_marginBottom="20sp"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:layout_marginBottom="20sp"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:layout_marginBottom="20sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <Button-->
+    <!--                    android:layout_width="0dp"-->
+
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:background="@android:color/transparent"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp" />-->
+    <!--            </TableRow>-->
+
+    <!--            <TableRow>-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="5"-->
+    <!--                    android:layout_marginBottom="20sp"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <Button-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:background="@android:color/transparent"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp" />-->
+    <!--            </TableRow>-->
+
+    <!--            <TableRow>-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="5"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:layout_marginBottom="20sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <Button-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:background="@android:color/transparent"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp" />-->
+    <!--            </TableRow>-->
+
+    <!--            <TableRow>-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="5"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:layout_marginBottom="20sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <EditText-->
+    <!--                    android:background="@drawable/box"-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_weight="4"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp"-->
+    <!--                    android:text=""-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:textStyle="bold" />-->
+    <!--                <Button-->
+    <!--                    android:layout_width="0dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:background="@android:color/transparent"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:padding="10sp" />-->
+    <!--            </TableRow>-->
+
+    <!--        </TableLayout>-->
+    <!--    </RelativeLayout>-->
+
+
+</RelativeLayout>

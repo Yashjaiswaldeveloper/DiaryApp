@@ -1,0 +1,233 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DiaryApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor_default</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark_default</item>
+        <item name="colorAccent">@color/primaryAccent_default</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/text_color_primary</item>
+<!--        &lt;!&ndash; Secondary brand color. &ndash;&gt;-->
+<!--        <item name="colorSecondary">@color/teal_200</item>-->
+<!--        <item name="colorSecondaryVariant">@color/teal_700</item>-->
+<!--        <item name="colorOnSecondary">@color/black</item>-->
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorPrimary</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="TabLayout" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="Custom">
+        <item name="android:windowFullscreen">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="AppTheme.Orange" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor_orange</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark_orange</item>
+        <item name="colorAccent">@color/primaryAccent_orange</item>
+<!--        <item name="android:windowBackground">@color/primaryColor_orange</item>-->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/text_color_primary2</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primaryColor_orange</item>
+    </style>
+
+    <style name="AppTheme.Brown" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor_brown</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark_brown</item>
+        <item name="colorAccent">@color/primaryAccent_brown</item>
+<!--        <item name="android:windowBackground">@color/primaryColor_brown</item>-->
+        <item name="android:textColor">@color/primaryColor_blue</item>
+        <item name="android:textColorPrimary">@color/text_color_primary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primaryColor_brown</item>
+    </style>
+
+    <style name="AppTheme.Yellow" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor_yellow</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark_yellow</item>
+        <item name="colorAccent">@color/primaryAccent_yellow</item>
+<!--        <item name="android:windowBackground">@color/primaryColor_yellow</item>-->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/text_color_primary2</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primaryColor_yellow</item>
+    </style>
+
+    <style name="AppTheme.Green" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor_green</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark_green</item>
+        <item name="colorAccent">@color/primaryAccent_green</item>
+<!--        <item name="android:windowBackground">@color/primaryColor_green</item>-->
+        <item name="android:textColor">@color/primaryAccent_yellow</item>
+        <item name="android:textColorPrimary">@color/text_color_primary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primaryColor_green</item>
+    </style>
+
+    <style name="AppTheme.Blue" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor_blue</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark_blue</item>
+        <item name="colorAccent">@color/primaryAccent_blue</item>
+<!--        <item name="android:windowBackground">@color/primaryColor_blue</item>-->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/text_color_primary2</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primaryColor_blue</item>
+    </style>
+
+    <style name="AppTheme.Purple" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor_purple</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark_purple</item>
+        <item name="colorAccent">@color/primaryAccent_purple</item>
+<!--        <item name="android:windowBackground">@color/primaryColor_purple</item>-->
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textColorPrimary">@color/text_color_primary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primaryColor_purple</item>
+    </style>
+
+
+
+    <style name="AppTheme.ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="CalendarTextDate" parent="TextAppearance.MaterialCalendarWidget.Date">
+        <item name="android:textColor">@color/cal_text_date</item>
+        <item name="android:textSize">@dimen/cal_date_size</item>
+        <item name="fontFamily">@font/capriola</item>
+    </style>
+    <style name="parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="modifiedEditText" parent="parent">
+        <item name="android:textSize">@dimen/newsMoreTextSize</item>
+        <item name="backgroundTint">@color/primaryTextColor</item>
+    </style>
+    <style name="viewParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="viewParent.headerText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="viewParent.headerText.NoMode">
+        <item name="android:textColor">@color/black</item>
+    </style>
+<!--    <style name="AppTheme_red" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/red_colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/red_colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/red_colorAccent</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppTheme_pink" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/pink_colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/pink_colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/pink_colorAccent</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppTheme_darpink" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/darkpink_colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/darkpink_colorPrimary</item>-->
+<!--        <item name="colorAccent">@color/darkpink_colorAccent</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppTheme_violet" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/violet_colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/violet_colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/violet_colorAccent</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppTheme_blue" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/blue_colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/blue_colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/blue_colorAccent</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppTheme_skyblue" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/skyblue_colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/skyblue_colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/skyblue_colorAccent</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppTheme_green" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/green_colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/green_colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/green_colorAccent</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppTheme_grey" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/grey_colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/grey_colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/grey_colorAccent</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppTheme_brown" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/brown_colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/brown_colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/brown_colorAccent</item>-->
+<!--    </style>-->
+
+<!--    <color name="red_colorPrimary">#ff0000</color>-->
+<!--    <color name="red_colorPrimaryDark">#DF0000</color>-->
+<!--    <color name="red_colorAccent">#F7F72D</color>-->
+
+<!--    <color name="pink_colorPrimary">#e91e63</color>-->
+<!--    <color name="pink_colorPrimaryDark">#CB1755</color>-->
+<!--    <color name="pink_colorAccent">#2095f2</color>-->
+
+<!--    <color name="darkpink_colorPrimary">#9b26af</color>-->
+<!--    <color name="darkpink_colorPrimaryDark">#7a1ea1</color>-->
+<!--    <color name="darkpink_colorAccent">#f34235</color>-->
+
+<!--    <color name="violet_colorPrimary">#6639b6</color>-->
+<!--    <color name="violet_colorPrimaryDark">#502ca7</color>-->
+<!--    <color name="violet_colorAccent">#e81d62</color>-->
+
+<!--    <color name="blue_colorPrimary">#3F51B5</color>-->
+<!--    <color name="blue_colorPrimaryDark">#3445A2</color>-->
+<!--    <color name="blue_colorAccent">#e81d62</color>-->
+
+<!--    <color name="skyblue_colorPrimary">#03A9F4</color>-->
+<!--    <color name="skyblue_colorPrimaryDark">#0094D7</color>-->
+<!--    <color name="skyblue_colorAccent">#fec006</color>-->
+
+<!--    <color name="green_colorPrimary">#4CAF50</color>-->
+<!--    <color name="green_colorPrimaryDark">#419744</color>-->
+<!--    <color name="green_colorAccent">#785447</color>-->
+
+<!--    <color name="grey_colorPrimary">#9d9d9d</color>-->
+<!--    <color name="grey_colorPrimaryDark">#606060</color>-->
+<!--    <color name="grey_colorAccent">#f90</color>-->
+
+<!--    <color name="brown_colorPrimary">#795548</color>-->
+<!--    <color name="brown_colorPrimaryDark">#63453B</color>-->
+<!--    <color name="brown_colorAccent">#e81d62</color>-->
+
+<!--    <style name="AppTheme.NoActionBar">-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+
+<!--    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+</resources>

@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Daily Diary:Journal with Lock</string>
+    <string name="privacy">      By clicking you are Agreeing to  <font fgcolor="#4196F8">Privacy Policy</font>\n                            and <font fgcolor="#4196F8">Terms &amp; Conditions</font></string>
+    <string name="learn">Let’s learn Somthing<font fgcolor="#4196F8">\nnew today !</font></string>
+    <string name="document">Document</string>
+    <string name="add_document_if_any">Add document (if any)</string>
+    <string name="add_expense">Add expense</string>
+    <string name="enter_expense_time_optional">Enter expense time (optional)</string>
+    <string name="enter_expense_date">Enter expense date</string>
+    <string name="enter_expense_amount">Enter expense amount</string>
+    <string name="back">back</string>
+    <string name="done">Done</string>
+    <string name="from_date">From date</string>
+    <string name="to_date">To date</string>
+    <string name="total_expense">Total Expense</string>
+    <string name="menu_add">Add</string>
+    <string name="add">Add a new event</string>
+    <string name="msg_empty">Click (+) to add a new event!</string>
+    <string name="label_dueDate">Due Date:</string>
+    <string name="menu_edit">Edit</string>
+    <string name="title">Title</string>
+    <string name="desc">Description</string>
+    <string name="dueDate">Due Date</string>
+    <string name="menu_save">Save</string>
+    <string name="menu_delete">Delete</string>
+    <string name="label_dueTime">Time:</string>
+    <string name="delete_confirm">Are you sure you want to delete the event?</string>
+    <string name="cancel">Cancel</string>
+    <string name="msg_empty_day">Looks like there\'s no events for this day. Yay!</string>
+    <string name="cleared_filters">Cleared Filters</string>
+    <string name="filter_clear">Clear Filter</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="privacy_new">We believe that privacy is important. We have created this policy to explain our privacy practices so that you can understand what information about you is collected, used and disclosed. We collect information from you to provide relevant service and a better user experience. With the consent of this privacy policy, your usage, statistics, input will be collected while using our application.
+
+\nHOW YOUR INFORMATION MAY BE DISCLOSED
+\nWe do not disclose your non-personal information for promotional purposes.
+\nNon-personal information. We do not combine non-personal information with personal information (such as associating your name with your unique user device number).
+\nPersonal information. We do not store personal information and therefore we do not disclose your personal information.
+\nDEVICE PERMISSIONS
+\n\nDevice Permissions:
+\n● CALL_PHONE (To make a call).
+\n● READ_CONTACTS &amp; WRITE_CONTACTS (Access contacts for the call and set
+ringtone).
+\n● STORAGE (To set a full display custom photo to selected contact).
+\n● CAMERA (To get a flash alert to notify the user).
+\n● INSTALL_SHORTCUT (To create a shortcut of the application).
+\n● BIND_ACCESSIBILITY_SERVICE (To announces message content &amp; sender name.
+\nTo get a flash alert while getting a message).
+\n\nWe use this information to operate, maintain, and provide to you the features and
+functionality of our Apps, as well as to communicate directly with you, such as to send you to
+email messages and push notifications. We may also send you Service-related emails or
+messages (e.g., account verification, order confirmations, change or updates to features of
+our apps, technical and security notices).
+\n\nTHIRD- PARTY SITES
+\nIn general, application interfaces, services, and sites access third-party information (such as your Facebook account information) through the application interface. We can provide links to third-party web sites such as Facebook as a service to our users. The site may also take advertisements from other companies. When you click on a third party link in an application, service or site, you can leave the application, services or site. Some of these third party sites may be co-branded with our name / logo or the name / logo of our affiliated entity, even if they are not operated or maintained by us. This policy does not address, and we are not responsible for, the privacy practices of web sites operated by third parties, whether they are linked to or otherwise accessible by an application, services, or site. The inclusion of a link or access to third party websites does not endorse such third party websites by us.
+\nUSERS WITH WHOM YOU SHARE YOUR INFORMATION
+\nWe cannot control the actions of other users with whom you share your information. We cannot control the information that is shared with other users on the application, services or site (via forums) or how other users will use or how to use such information. We are not responsible for the third party perimeter of our security measures.
+\n\nSECURITY
+\nWe are very concerned about protecting the privacy of your information. We do not collect personal information, and we employ administrative, physical and electronic measures designed to protect your non-personal information from unauthorized access and use. Please keep in mind that any security measures we take to protect your information are completely guaranteed to avoid unauthorized access to or use of your non-personal information which is impenetrable.
+\n\nSENSITIVE INFORMATION
+\nWe ask that you do not send us, and that you send any sensitive personal information (for example, information related to racial or ethnic origin, political opinion, religion or other beliefs, health, sexual orientation, criminal background or membership in previous organizations) ) Do not disclose, including trade union membership) on an application, services or site or otherwise through us.
+\n\nCONTACTING US / REPORTING VIOLATIONS
+\nIf you have any questions or comments about this policy or our privacy practices, or to report about the policy or misuse of an application, service, or site, please contact us at priyankanaik0120@gmail.com
+\n\nCHANGES TO THIS PRIVACY POLICY
+\nOur privacy policy may change from time to time, we will post any privacy policy changes on this page, so please review it from time to time. We may provide you with additional forms of notice of modifications or updates according to the circumstances.
+\nIf you do not agree to any modification of this policy, your only support is to immediately stop all applications, services and all use of the site. Your continued use of any application, services or site following the posting of any amendment to this policy will constitute your acceptance of the amended policy. Please note that none of our employees or agents have the authority to change any of our policies.
+\n\nContact
+\nYou can contact us about this privacy statement by writing an email to us at the address below:
+
+\nEmail: - drivemediainc@gmail.com
+
+\n<b>Thank You!</b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="organize">It\'s Time to Organize your Day</string>
+    <string name="prefs_theme_key">app_theme</string>
+</resources>

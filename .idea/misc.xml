@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Anil/.gradle/caches/transforms-3/f9531e58bc4e053e53306714160c8cdb/transformed/appcompat-1.5.1/res/layout/support_simple_spinner_dropdown_item.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable-v24/ic_baseline_check_24.xml" value="0.2765" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/adding.xml" value="0.274" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/back.xml" value="0.2845" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/background_line.xml" value="0.274" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/blue_button.xml" value="0.2715" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/box.xml" value="0.2715" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/btn_bg.xml" value="0.277" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/btnbg.xml" value="0.274" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/btnfullbg.xml" value="0.2715" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/button_press.xml" value="0.2765" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/calendar_selector.xml" value="0.205" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/check.xml" value="0.2765" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/circle.xml" value="0.2715" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/dashboard.xml" value="0.2715" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/date.xml" value="0.2715" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/diary_note.xml" value="0.277" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/edit_text.xml" value="0.2715" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/ic_add_white_24dp.xml" value="0.205" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/ic_arrow_back_small_black_24dp.xml" value="0.205" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/ic_arrow_back_white_24dp.xml" value="0.205" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/ic_arrow_forward_small_black_24dp.xml" value="0.205" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/ic_cancel_black_24dp.xml" value="0.2715" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/navigation_bar_back.xml" value="0.277" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/orange_btn.xml" value="0.2715" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/plus.xml" value="0.2715" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/profile_navigation.xml" value="0.277" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/rect_back.xml" value="0.205" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/set.xml" value="0.2715" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/tab_indicator.xml" value="0.2765" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/time.xml" value="0.274" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/tk.xml" value="0.2715" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/drawable/white_back.xml" value="0.276" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/font/lato.xml" value="0.22760416666666666" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_calendar_splash.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_checking.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_dashboard.xml" value="0.33" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_dialy_expense.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_diary_notes.xml" value="0.36041666666666666" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_diaryset.xml" value="0.36041666666666666" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_event_reminder.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_event_reminder2.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_first_loading_page.xml" value="0.3697916666666667" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_home.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_login.xml" value="0.3697916666666667" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_login_one.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_main.xml" value="0.35572916666666665" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_main_expense.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_next_expense.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_privacy_policy.xml" value="0.25" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_profile.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_registration.xml" value="0.36041666666666666" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_save_successfully_two.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_saved_notes.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_saved_succesfull_three.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_saved_successfully_one.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_second_loading_page.xml" value="0.3697916666666667" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_setup_complete.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_theme.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_third_loading_page.xml" value="0.35572916666666665" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_thop_thank_uactivity.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_travel_diary.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_travel_panner.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_travel_planner_four.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_travel_planner_three.xml" value="0.36041666666666666" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_travel_planner_two.xml" value="0.36041666666666666" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/activity_traveling_data_overall.xml" value="0.36041666666666666" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/colour.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/custom_time_picker.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/diarylist.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/docview_layout_design.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/drawer_header.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/event_display.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/event_edit.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/event_row.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/fragment_daily_expense.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.36041666666666666" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/fragment_diary_notes.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/fragment_event_calendar.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/fragment_expense.xml" value="0.36041666666666666" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/fragment_home.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/fragment_new_event.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/fragment_travel_calendar.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/installnewappdialog.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/itemview_bottom_sheet.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/list_item_color.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/model_design_expense.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/notelist.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/notes.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/noteset.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/noteview.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/settings.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/shop.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/store.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/tdfolder.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/todo.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/todofol.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/todolist.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/layout/travelplan.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/menu/actions_edit.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/menu/actions_home.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/menu/bottomnav.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/menu/empty.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/menu/navigation_drawer.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Anil/DiaryApp/app/src/main/res/menu/update_delect_nav.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/HP/Downloads/DiaryApp/DiaryApp/app/src/main/res/layout/activity_login_one.xml" value="0.4111111111111111" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
